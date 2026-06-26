@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8 - User Preferences</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        select, button{
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+
+    <script>
+        function savePreference() {
+            let event = document.getElementById("eventType").value;
+            localStorage.setItem("preferredEvent", event);
+            sessionStorage.setItem("preferredEvent", event);
+            alert("Preference Saved");
+        }
+
+        function loadPreference() {
+            let savedEvent = localStorage.getItem("preferredEvent");
+            if(savedEvent){
+                document.getElementById("eventType").value = savedEvent;
+            }
+        }
+
+        function clearPreference() {
+            localStorage.clear();
+            sessionStorage.clear();
+            document.getElementById("eventType").value = "";
+            alert("Preferences Cleared");
+        }
+    </script>
+
+</head>
+<body onload="loadPreference()">
+
+<h2>Save Your Preferred Event</h2>
+
+<select id="eventType">
+    <option value="">Select Event</option>
+    <option>Tree Plantation</option>
+    <option>Blood Donation</option>
+    <option>Cultural Festival</option>
+    <option>Sports Competition</option>
+</select>
+
+<br>
+
+<button onclick="savePreference()">Save Preference</button>
+<button onclick="clearPreference()">Clear Preferences</button>
+
+</body>
+</html>

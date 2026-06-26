@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6 - Event Handling</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        input, select, textarea{
+            width: 300px;
+            padding: 8px;
+            margin: 10px 0;
+        }
+
+        img{
+            width: 250px;
+            height: 180px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        function validatePhone() {
+            let phone = document.getElementById("phone").value;
+            if(phone.length != 10){
+                alert("Enter a valid 10-digit phone number");
+            }
+        }
+
+        function showFee() {
+            let event = document.getElementById("event").value;
+            let fee = "";
+
+            if(event=="Tree Plantation")
+                fee="Fee: ₹100";
+            else if(event=="Blood Donation")
+                fee="Fee: Free";
+            else if(event=="Cultural Festival")
+                fee="Fee: ₹300";
+            else if(event=="Sports Competition")
+                fee="Fee: ₹200";
+
+            document.getElementById("fee").innerHTML=fee;
+        }
+
+        function submitForm() {
+            alert("Feedback Submitted Successfully!");
+        }
+
+        function enlargeImage(img) {
+            img.style.width="500px";
+            img.style.height="350px";
+        }
+
+        function countCharacters() {
+            let text=document.getElementById("feedback").value;
+            document.getElementById("count").innerHTML="Characters: "+text.length;
+        }
+    </script>
+
+</head>
+<body>
+
+<h2>Event Feedback Form</h2>
+
+<label>Phone Number</label><br>
+<input type="text" id="phone" onblur="validatePhone()">
+
+<br>
+
+<label>Select Event</label><br>
+<select id="event" onchange="showFee()">
+    <option>Select</option>
+    <option>Tree Plantation</option>
+    <option>Blood Donation</option>
+    <option>Cultural Festival</option>
+    <option>Sports Competition</option>
+</select>
+
+<p id="fee"></p>
+
+<img src="event1.jpeg" ondblclick="enlargeImage(this)" alt="Event">
+
+<br><br>
+
+<label>Feedback</label><br>
+<textarea id="feedback" rows="5" onkeyup="countCharacters()"></textarea>
+
+<p id="count">Characters: 0</p>
+
+<button onclick="submitForm()">Submit</button>
+
+</body>
+</html>

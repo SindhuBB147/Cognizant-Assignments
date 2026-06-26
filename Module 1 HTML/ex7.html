@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7 - Video Invite</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        video{
+            border: 3px solid black;
+        }
+
+        #status{
+            color: green;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+
+    <script>
+        function videoReady() {
+            document.getElementById("status").innerHTML = "Video ready to play";
+        }
+
+        window.onbeforeunload = function() {
+            return "Are you sure you want to leave this page?";
+        };
+    </script>
+
+</head>
+<body>
+
+<h2>Community Event Promo Video</h2>
+
+<video width="600" controls oncanplay="videoReady()">
+    <source src="promo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<p id="status"></p>
+
+</body>
+</html>

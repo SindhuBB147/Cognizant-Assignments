@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 - Event Registration Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        form{
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        input, select, textarea{
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        input[type="submit"]{
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        output{
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        function registerEvent() {
+            document.getElementById("message").value =
+            "Registration Successful!";
+        }
+    </script>
+
+</head>
+<body>
+
+<h2 align="center">Event Registration Form</h2>
+
+<form onsubmit="registerEvent(); return false;">
+
+    <label>Name</label>
+    <input type="text" placeholder="Enter your name" required autofocus>
+
+    <label>Email</label>
+    <input type="email" placeholder="Enter your email" required>
+
+    <label>Event Date</label>
+    <input type="date" required>
+
+    <label>Event Type</label>
+    <select required>
+        <option value="">Select Event</option>
+        <option>Tree Plantation</option>
+        <option>Blood Donation</option>
+        <option>Cultural Festival</option>
+        <option>Sports Competition</option>
+    </select>
+
+    <label>Message</label>
+    <textarea placeholder="Enter your message"></textarea>
+
+    <input type="submit" value="Register">
+
+    <br><br>
+
+    <output id="message"></output>
+
+</form>
+
+</body>
+</html>

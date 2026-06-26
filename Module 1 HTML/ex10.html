@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 10 - Debugging</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h2{
+            color: blue;
+        }
+
+        button{
+            padding: 10px 20px;
+        }
+    </style>
+
+    <script>
+        function showMessage(){
+            let name = "Sindhu";
+            console.log("User Name:", name);
+            alert("Welcome " + name);
+        }
+    </script>
+
+</head>
+<body>
+
+<h2>Chrome DevTools Debugging Demo</h2>
+
+<p>Click the button to test JavaScript debugging.</p>
+
+<button onclick="showMessage()">Click Me</button>
+
+</body>
+</html>
