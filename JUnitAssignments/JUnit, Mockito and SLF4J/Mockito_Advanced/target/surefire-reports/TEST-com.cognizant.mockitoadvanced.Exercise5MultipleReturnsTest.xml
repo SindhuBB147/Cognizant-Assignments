@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest" time="0.083" tests="8" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\sindh\Desktop\Cognizant Assignments.worktrees\agents-maven-project-setup-junit-mockito-slf4j\JUnit, Mockito and SLF4J\Mockito_Advanced\target\test-classes;C:\Users\sindh\Desktop\Cognizant Assignments.worktrees\agents-maven-project-setup-junit-mockito-slf4j\JUnit, Mockito and SLF4J\Mockito_Advanced\target\classes;C:\Users\sindh\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\sindh\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\sindh\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\sindh\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\sindh\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\sindh\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\sindh\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\sindh\.m2\repository\org\mockito\mockito-core\5.3.1\mockito-core-5.3.1.jar;C:\Users\sindh\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\sindh\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.4\byte-buddy-agent-1.14.4.jar;C:\Users\sindh\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\sindh\.m2\repository\org\mockito\mockito-junit-jupiter\5.3.1\mockito-junit-jupiter-5.3.1.jar;C:\Users\sindh\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\sindh\.m2\repository\org\slf4j\slf4j-simple\2.0.7\slf4j-simple-2.0.7.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.12.7-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\sindh\AppData\Local\Temp\surefire18054470409505940319\surefirebooter-20260725170557420_3.jar C:\Users\sindh\AppData\Local\Temp\surefire18054470409505940319 2026-07-25T17-05-57_185-jvmRun1 surefire-20260725170557420_1tmp surefire_0-20260725170557420_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\sindh\Desktop\Cognizant Assignments.worktrees\agents-maven-project-setup-junit-mockito-slf4j\JUnit, Mockito and SLF4J\Mockito_Advanced\target\test-classes;C:\Users\sindh\Desktop\Cognizant Assignments.worktrees\agents-maven-project-setup-junit-mockito-slf4j\JUnit, Mockito and SLF4J\Mockito_Advanced\target\classes;C:\Users\sindh\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\sindh\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\sindh\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\sindh\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\sindh\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\sindh\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\sindh\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\sindh\.m2\repository\org\mockito\mockito-core\5.3.1\mockito-core-5.3.1.jar;C:\Users\sindh\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\sindh\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.4\byte-buddy-agent-1.14.4.jar;C:\Users\sindh\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\sindh\.m2\repository\org\mockito\mockito-junit-jupiter\5.3.1\mockito-junit-jupiter-5.3.1.jar;C:\Users\sindh\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\sindh\.m2\repository\org\slf4j\slf4j-simple\2.0.7\slf4j-simple-2.0.7.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\sindh"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.12.7-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\sindh\Desktop\Cognizant Assignments.worktrees\agents-maven-project-setup-junit-mockito-slf4j\JUnit, Mockito and SLF4J\Mockito_Advanced"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\sindh\AppData\Local\Temp\surefire18054470409505940319\surefirebooter-20260725170557420_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+7"/>
+    <property name="user.name" value="sindh"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.12+7"/>
+    <property name="localRepository" value="C:\Users\sindh\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\sindh\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="C:\Users\sindh\Desktop\Cognizant Assignments.worktrees\agents-maven-project-setup-junit-mockito-slf4j\JUnit, Mockito and SLF4J\Mockito_Advanced"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.12.7-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-17.0.12.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\TDM-GCC-64\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\sindh\anaconda3;C:\Users\sindh\anaconda3\Library\mingw-w64\bin;C:\Users\sindh\anaconda3\Library\usr\bin;C:\Users\sindh\anaconda3\Library\bin;C:\Users\sindh\anaconda3\Scripts;C:\Users\sindh\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\sindh\AppData\Local\Programs\Python\Python312\;C:\Users\sindh\AppData\Local\Microsoft\WindowsApps;C:\Users\sindh\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\sindh\Downloads\mingw32\bin;C:\Users\sindh\AppData\Roaming\npm;C:\Users\sindh\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\sindh\AppData\Local\Programs\Qoder\bin;C:\Users\sindh\AppData\Local\Programs\Antigravity\bin;C:\Users\sindh\A;C:\Program Files\Apache\Maven\apache-maven-3.9.16-bin\apache-maven-3.9.16\bin;C:\Users\sindh\anaconda3;C:\Users\sindh\anaconda3\Library\mingw-w64\bin;C:\Users\sindh\anaconda3\Library\usr\bin;C:\Users\sindh\anaconda3\Library\bin;C:\Users\sindh\anaconda3\Scripts;C:\Users\sindh\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\sindh\AppData\Local\Programs\Python\Python312\;C:\Users\sindh\AppData\Local\Microsoft\WindowsApps;C:\Users\sindh\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\sindh\Downloads\mingw32\bin;C:\Users\sindh\AppData\Roaming\npm;C:\Users\sindh\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\sindh\AppData\Local\Programs\Qoder\bin;C:\Users\sindh\AppData\Local\Programs\Antigravity\bin;C:\Users\sindh\AppData\Local\Programs\Antigravity IDE\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.12+7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testLastReturnRepeats" classname="com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest" time="0.009">
+    <system-err><![CDATA[[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - === SETUP: Initialize Service with mocked Repository ===
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ARRANGE: Setup return values, last will repeat ---
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ACT: Call four times ---
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data from repository
+[main] INFO com.cognizant.mockitoadvanced.Service - Data processed: Processed First
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data from repository
+[main] INFO com.cognizant.mockitoadvanced.Service - Data processed: Processed Last
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data from repository
+[main] INFO com.cognizant.mockitoadvanced.Service - Data processed: Processed Last
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data from repository
+[main] INFO com.cognizant.mockitoadvanced.Service - Data processed: Processed Last
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ASSERT: Verify last value repeats ---
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - ✓ Test passed
+]]></system-err>
+  </testcase>
+  <testcase name="testServiceWithMultipleReturnValues" classname="com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest" time="0.008">
+    <system-err><![CDATA[[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - === SETUP: Initialize Service with mocked Repository ===
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ARRANGE: Setup multiple return values ---
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ACT: Call processData multiple times ---
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data from repository
+[main] INFO com.cognizant.mockitoadvanced.Service - Data processed: Processed First Mock Data
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data from repository
+[main] INFO com.cognizant.mockitoadvanced.Service - Data processed: Processed Second Mock Data
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ASSERT: Verify different results ---
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - ✓ Test passed
+]]></system-err>
+  </testcase>
+  <testcase name="testThreeSequentialReturns" classname="com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest" time="0.007">
+    <system-err><![CDATA[[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - === SETUP: Initialize Service with mocked Repository ===
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ARRANGE: Setup three return values ---
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ACT: Call method three times ---
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data from repository
+[main] INFO com.cognizant.mockitoadvanced.Service - Data processed: Processed Data One
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data from repository
+[main] INFO com.cognizant.mockitoadvanced.Service - Data processed: Processed Data Two
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data from repository
+[main] INFO com.cognizant.mockitoadvanced.Service - Data processed: Processed Data Three
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ASSERT: Verify all returns ---
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - ✓ Test passed
+]]></system-err>
+  </testcase>
+  <testcase name="testReturnFollowedByException" classname="com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest" time="0.019">
+    <system-err><![CDATA[[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - === SETUP: Initialize Service with mocked Repository ===
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ARRANGE: Setup return then exception ---
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ACT: First call succeeds, second throws ---
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data from repository
+[main] INFO com.cognizant.mockitoadvanced.Service - Data processed: Processed Success
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ASSERT: Verify success ---
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ASSERT: Verify exception on second call ---
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data from repository
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - ✓ Test passed
+]]></system-err>
+  </testcase>
+  <testcase name="testMultipleDifferentIds" classname="com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest" time="0.008">
+    <system-err><![CDATA[[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - === SETUP: Initialize Service with mocked Repository ===
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ARRANGE: Setup returns for multiple IDs ---
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ACT: Call multiple times with different IDs ---
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data for ID: 1
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data for ID: 2
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data for ID: 1
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data for ID: 2
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ASSERT: Verify separate chains ---
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - ✓ Test passed
+]]></system-err>
+  </testcase>
+  <testcase name="testAlternatingReturnValues" classname="com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest" time="0.006">
+    <system-err><![CDATA[[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - === SETUP: Initialize Service with mocked Repository ===
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ARRANGE: Setup alternating returns ---
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ACT: Call four times ---
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data from repository
+[main] INFO com.cognizant.mockitoadvanced.Service - Data processed: Processed Even
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data from repository
+[main] INFO com.cognizant.mockitoadvanced.Service - Data processed: Processed Odd
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data from repository
+[main] INFO com.cognizant.mockitoadvanced.Service - Data processed: Processed Even
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data from repository
+[main] INFO com.cognizant.mockitoadvanced.Service - Data processed: Processed Odd
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ASSERT: Verify alternation ---
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - ✓ Test passed
+]]></system-err>
+  </testcase>
+  <testcase name="testMultipleOperationsCombined" classname="com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest" time="0.007">
+    <system-err><![CDATA[[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - === SETUP: Initialize Service with mocked Repository ===
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ARRANGE: Setup returns for multiple methods ---
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ACT: Call different methods multiple times ---
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data from repository
+[main] INFO com.cognizant.mockitoadvanced.Service - Data processed: Processed Data1
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data for ID: 1
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data from repository
+[main] INFO com.cognizant.mockitoadvanced.Service - Data processed: Processed Data2
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data for ID: 1
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ASSERT: Verify all operations ---
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - ✓ Test passed
+]]></system-err>
+  </testcase>
+  <testcase name="testMultipleReturnsWithId" classname="com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest" time="0.003">
+    <system-err><![CDATA[[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - === SETUP: Initialize Service with mocked Repository ===
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ARRANGE: Setup returns for specific ID ---
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ACT: Call multiple times with same ID ---
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data for ID: 1
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data for ID: 1
+[main] INFO com.cognizant.mockitoadvanced.Service - Processing data for ID: 1
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - --- ASSERT: Verify progression ---
+[main] INFO com.cognizant.mockitoadvanced.Exercise5MultipleReturnsTest - ✓ Test passed
+]]></system-err>
+  </testcase>
+</testsuite>

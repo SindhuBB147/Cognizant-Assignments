@@ -1,0 +1,4 @@
+com\cognizant\mockitobasic\MyService.class
+com\cognizant\mockitobasic\UserRepository.class
+com\cognizant\mockitobasic\User.class
+com\cognizant\mockitobasic\ExternalApi.class

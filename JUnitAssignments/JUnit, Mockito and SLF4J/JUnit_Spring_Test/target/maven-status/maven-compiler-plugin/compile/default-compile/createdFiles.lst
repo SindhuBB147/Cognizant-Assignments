@@ -1,0 +1,8 @@
+com\cognizant\springtest\MessageService.class
+com\cognizant\springtest\exception\GlobalExceptionHandler.class
+com\cognizant\springtest\service\UserService.class
+com\cognizant\springtest\SpringTestApplication.class
+com\cognizant\springtest\repository\UserRepository.class
+com\cognizant\springtest\entity\User.class
+com\cognizant\springtest\service\CalculatorService.class
+com\cognizant\springtest\controller\UserController.class

@@ -1,0 +1,13 @@
+com\cognizant\springtest\Exercise12MockingServiceDependencyInIntegrationTest.class
+com\cognizant\springtest\Exercise11MockingRepositoryInServiceTest.class
+com\cognizant\springtest\Exercise5UserControllerPostTest.class
+com\cognizant\springtest\MessageServiceTest.class
+com\cognizant\springtest\Exercise1CalculatorServiceTest.class
+com\cognizant\springtest\Exercise10MockingServiceDependencyInControllerTest.class
+com\cognizant\springtest\Exercise7CustomRepositoryQueryTest.class
+com\cognizant\springtest\Exercise2UserServiceTest.class
+com\cognizant\springtest\Exercise3UserControllerTest.class
+com\cognizant\springtest\Exercise4IntegrationTest.class
+com\cognizant\springtest\Exercise9ParameterizedTest.class
+com\cognizant\springtest\Exercise8ControllerExceptionHandlingTest.class
+com\cognizant\springtest\Exercise6ExceptionHandlingTest.class

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.cognizant.springtest.Exercise12MockingServiceDependencyInIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.989 s - in com.cognizant.springtest.Exercise12MockingServiceDependencyInIntegrationTest

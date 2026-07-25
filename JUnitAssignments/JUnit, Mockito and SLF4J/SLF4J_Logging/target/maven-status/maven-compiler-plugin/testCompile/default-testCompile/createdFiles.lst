@@ -1,0 +1,4 @@
+com\cognizant\slf4j\Exercise1LoggingErrorAndWarningTest.class
+com\cognizant\slf4j\Exercise2ParameterizedLoggingTest.class
+com\cognizant\slf4j\Exercise3UsingDifferentAppendersTest.class
+com\cognizant\slf4jlogging\ApplicationLoggerTest.class
