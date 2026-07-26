@@ -1,0 +1,62 @@
+Security
+--------
+- Consist two things
+    |- Authentication
+        |- Who are you?
+            Username:
+            Password:
+
+    |- Authorization
+        |- What are you allowed to access
+           |- can access
+                |- /countries
+                |- /departments
+
+           |- not allowed
+                |- /employees
+
+Note: Authentication happens first in other words Authorization happens after Authentication
+
+Spring Security
+---------------
+Spring Security provides
+    |- Authentication
+    |- Authorization
+    |- Password Encryption
+    |- Session Management
+    |- CSRF Protection
+    |- JWT Authentication
+    |- OAuth2
+    |- Role Management
+
+--------------------------------------------
+Roles Flow
+----------
+
+        Login
+          |
+   username + password
+          |
+    Aunthentication
+          |
+    Identity Verify
+          |
+     Authorization
+          |
+    Check User Role
+          |
+    Access Granted/Denied
+
+
+
+
+
+
+
+
+
+
+
+
+
+

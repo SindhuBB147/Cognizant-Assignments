@@ -1,0 +1,33 @@
+.score-card {
+  border: 2px solid #333;
+  padding: 20px;
+  margin: 20px auto;
+  width: 400px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.score-card h2 {
+  color: #2c3e50;
+  text-align: center;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.score-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #34495e;
+}
+
+.score-card .average {
+  font-size: 18px;
+  color: #27ae60;
+  font-weight: bold;
+  background: #e8f8f5;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
